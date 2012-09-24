@@ -1,0 +1,12 @@
+h2 Lista de produtos
+hr
+a(href='/produtos/add') Criar produto
+hr
+ul 
+	each produto in produtos
+		li
+			a(href='/produtos/view/#{produto.id}') #{produto.nome}  
+			span - 
+			a(href='/produtos/edit/#{produto.id}') e
+			span  - 
+			a(href='/produtos/del/#{produto.id}') x			

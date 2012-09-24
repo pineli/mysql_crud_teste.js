@@ -1,0 +1,9 @@
+h2 Criar produto
+hr
+form(action='/produtos/add', method='POST')
+	p
+		input(typoe='text', name='produto[nome]', placeholder='Nome do produto')
+	p
+		input(type='submit', value='Criar produto')	
+	br
+	a(href='/produtos') Voltar

@@ -1,0 +1,10 @@
+h2 Alterar produto
+hr
+form(action='/produtos/edit', method='POST')
+	p
+		input(type='text', name='produto[nome]', placeholder='Nome do produto', value='#{produto[0].nome}')
+		input(type='hidden', name='produto[id]', value='#{produto[0].id}')
+	p
+		input(type='submit', value='Alterar produto')	
+	br
+	a(href='/produtos') Cancelar e voltar
